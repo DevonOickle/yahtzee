@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Yahtzee.css"> 
+    <title>Yahtzee</title>
+</head>
+<body>
+
+    <header> Yahtzee</header>
+
+    <br>
+
+    <div style="float: left">
+        <button class="die" id="die0"></button>
+    </div>
+
+    <div style="float: left">
+        <button class="die" id="die1"></button>
+    </div>
+
+    <div style="float: left">
+        <button class="die" id="die2"></button>
+    </div>
+
+    <div style="float: left">
+        <button class="die" id="die3"></button>
+    </div>
+
+    <div style="float: left">
+        <button class="die" id="die4"></button>
+    </div>
+
+    <script src="Yahtzee.js"></script> 
+
+    <table> 
+    
+        <tr>
+            <th>Upper</th>
+        </tr>
+        <tr>
+            <td>Ones</td>
+            <td id="oneScore">-</td>
+            <td id="possibleOnesScore" style="color: red;">-</td>
+            <td><button id="holdOnes">✔</button></td>
+        </tr>
+        <tr>
+            <td>Twos</td>
+            <td id="twoScore">-</td>
+            <td id="possibleTwosScore" style="color: red;">-</td>
+            <td><button id="holdtwos">✔</button></td>
+        </tr>
+        <tr>
+            <td>Threes</td>
+            <td id="threeScore">-</td>
+            <td id="possibleThreesScore" style="color: red;">-</td>
+            <td><button id="holdThrees">✔</button></td>
+        </tr>
+        <tr>
+            <td>Fours</td>
+            <td id="fourScore">-</td>
+            <td id="possibleFoursScore" style="color: red;">-</td>
+            <td><button id="holdFours">✔</button></td>
+        </tr>
+        <tr>
+            <td>Fives</td>
+            <td id="fiveScore">-</td>
+            <td id="possibleFivesScore" style="color: red;">-</td>
+            <td><button id="holdFives">✔</button></td>
+        </tr>
+        <tr>
+            <td>Sixes</td>
+            <td id="sixScore">-</td>
+            <td id="possibleSixesScore" style="color: red;">-</td>
+            <td><button id="holdSixes">✔</button></td>
+        </tr>
+
+        <tr>
+            <td>Sum:</td>
+            <td id="totalupper">-</td>
+        </tr>
+        <tr>
+            <td>Bonus:</td>
+            <td id="bonus">-</td>
+        </tr>
+
+        <tr>
+            <th>Lower</th>
+        </tr>
+
+        <tr>
+            <td>Three of a kind</td>
+            <td id="threeOfKind">-</td>  
+            <td id="possibleThreeOfKind" style="color: red;">-</td>
+            <td><button id="holdThreeOfKind">✔</button></td>
+        </tr>
+        <tr>
+            <td>Four of a kind</td>
+            <td id="fourOfKind">-</td>  
+            <td id="possibleFourOfKind" style="color: red;">-</td>
+            <td><button id="holdFourOfKind">✔</button></td>
+        </tr>
+        <tr>
+            <td>FullHouse</td>
+            <td id="fullHouse">-</td> 
+            <td id="possibleFullHouse" style="color: red;">-</td>
+            <td><button id="holdFH">✔</button></td> 
+        </tr>
+        <tr>
+            <td>Small Straight</td>
+            <td id="smallStraight">-</td> 
+            <td id="possibleSmallStraight" style="color: red;">-</td>
+            <td><button id="holdSmallStraight">✔</button></td> 
+        </tr>
+        <tr>
+            <td>Large Straight</td>
+            <td id="largeStraight">-</td> 
+            <td id="possibleLargeStraight" style="color: red;">-</td>
+            <td><button id="holdLargeStraight">✔</button></td> 
+        </tr>
+        <tr>
+            <td>Chance</td>
+            <td id="chance">-</td>  
+            <td id="possibleChance" style="color: red;">-</td>
+            <td><button id="holdChance">✔</button></td>
+        </tr>
+        <tr>
+            <td>Yahtzee</td>
+            <td id="yahtzee">-</td>  
+            <td id="possibleYahtzee" style="color: red;">-</td>
+            <td><button id="holdYahtzee">✔</button></td>
+        </tr>
+        
+        <th>Sum:</th>
+        <td id="totalScore">-</td>
+    
+    </table>
+
+    <p id="pip"></p>
+    <button class = rollButton id="roll-button">Roll Dice</button>
+
+
+    <table class="total" >
+        <td class="total">Total:  </td>
+        <td class="total" id="Sum">-</h1>
+    </table class="total">
+    
+</body>
+</html>
